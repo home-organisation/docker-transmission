@@ -17,4 +17,3 @@ if __name__ == '__main__':
     if TEST_USER is None or TEST_PASSWORD is None:
         logging.warning("TEST_USER or TEST_PASSWORD with no value, nothing to do")
         sys.exit(0)
-

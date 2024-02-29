@@ -1,4 +1,4 @@
-#Last package update 28 February 2024 20:07
+#Last package update 29 February 2024 09:23
 FROM lscr.io/linuxserver/transmission:latest
 LABEL Maintainer="bizalu"
 

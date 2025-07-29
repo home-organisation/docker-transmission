@@ -4,6 +4,8 @@ LABEL Maintainer="bizalu"
 
 # Prepare environnement
 RUN apk -U upgrade --no-cache
+RUN apk add nfs-utils
+RUN rc-update add nfs
 
 # Install custom post script
 COPY custom-script/ /custom-cont-init.d

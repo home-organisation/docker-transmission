@@ -22,3 +22,7 @@ mkdir -p "/config/torrents"
 chown abc:users "/config/torrents"
 mkdir -p "/config/resume"
 chown abc:users "/config/resume"
+
+echo "Export nfs directories..."
+echo "/downloads/ *(rw,sync,no_subtree_check,no_root_squash)" > /etc/exports
+exportfs -afv

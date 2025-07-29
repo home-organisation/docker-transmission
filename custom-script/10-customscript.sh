@@ -26,3 +26,4 @@ chown abc:users "/config/resume"
 echo "Export nfs directories..."
 echo "/downloads/ *(rw,sync,no_subtree_check,no_root_squash)" > /etc/exports
 exportfs -afv
+rc-service nfs start

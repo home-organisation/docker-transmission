@@ -23,7 +23,7 @@ chown abc:users "/config/torrents"
 mkdir -p "/config/resume"
 chown abc:users "/config/resume"
 
-echo "resolv dns resolution issue"
+sleep 5
 ip=$(nslookup connect.maxp2p.org 192.168.1.21 | grep Address | awk '{ print $2 }' | sed -n 2p)
 echo "Adding connect.maxp2p.org to /etc/hosts with IP ${ip}"
 echo "${ip}   connect.maxp2p.org" >> /etc/hosts

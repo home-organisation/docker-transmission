@@ -26,4 +26,4 @@ chown abc:users "/config/resume"
 sleep 5
 ip=$(nslookup connect.maxp2p.org 192.168.1.21 | grep Address | awk '{ print $2 }' | sed -n 2p)
 echo "Adding connect.maxp2p.org to /etc/hosts with IP ${ip}"
-echo "${ip}   connect.maxp2p.org" >> /etc/hosts
+echo "${ip}    connect.maxp2p.org" >> /etc/hosts
